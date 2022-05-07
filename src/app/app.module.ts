@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DxTextBoxModule } from 'devextreme-angular';
+import { DxButtonModule, DxTextBoxModule } from 'devextreme-angular';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { DxTextBoxModule } from 'devextreme-angular';
   imports: [
     BrowserModule,
     DxTextBoxModule,
+    DxButtonModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule
   ],
